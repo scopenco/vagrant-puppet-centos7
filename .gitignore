@@ -1,0 +1,15 @@
+# Editors etc
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+
+.librarian/
+.tmp/
+.vagrant/
+
+Puppetfile.lock
+Gemfile.lock
+modules/
