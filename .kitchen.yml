@@ -13,3 +13,7 @@ platforms:
 suites:
   - name: default
     manifest: site.pp
+    driver:
+      synced_folders:
+        - ["./src", "/opt/src"]
+        - ["~/", "/opt/Home"]

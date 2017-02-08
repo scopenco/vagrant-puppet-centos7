@@ -13,3 +13,5 @@
 Puppetfile.lock
 Gemfile.lock
 modules/
+.kitchen/
+.kitchen.local.yml

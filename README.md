@@ -1,21 +1,22 @@
-# Vagrant CentOS 7 Environment
+# Vagrant CentOS 7 Environment with Puppet provisiover
 
 ### Desciprion
 
-This Vagrant Environment deploy CentOS 7 VM for local development.
+This Vagrant Environment deploy CentOS 7 VM for local development.  
+By default `src` directory mount to `/opt/src` and user home directory mount to `/opt/Home`.
 
 ### Requirments
 
-* [Parallels Desktop for Mac Pro Edition](http://www.parallels.com/products/desktop/download/) or VirtualBox
+* Parallels Desktop or VirtualBox
 * [Vagrant](https://www.vagrantup.com/downloads.html) 1.7.0 or higher
-* Vagrant plugins: `vagrant-parallels`, `vagrant-puppet-install`
 
 ### Usage
 * Clone git repository
 * run `vagrant plugin install vagrant-parallels vagrant-puppet-install` to install vagrant plugins
 * run `bundle install` to get all necessary gems
-* run `cd puppet/environments/local && librarian-puppet install && cd ../../../` to install puppet modules
+* run `rake librarian` to install puppet modules
 * run `vagrant up` to create and provision VM
+* run `rake kitchen` to create/provision/test VM in Test Kitchen
 
 ### Authors
 
